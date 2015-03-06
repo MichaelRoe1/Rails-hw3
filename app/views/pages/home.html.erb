@@ -1,0 +1,18 @@
+ <div class == 'home'>
+ 	<%= @usermodel.each do |u| %>
+      <p> <%= u.username %></p>
+      <p> <%= u.email %></p>
+      <p> <%= u.age %></p>
+    <%end%>
+
+	<%= @catmodel.each do |c| %>
+      <p> <%= c.name %></p>
+     <%end%>
+
+
+    <%= @todosmodel.each do |t| %>
+      <p> <%= t.task %></p>
+      <p> <%= t.complete %></p>
+     <%end%>
+</div>
+
